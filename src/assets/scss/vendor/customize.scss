@@ -1,0 +1,88 @@
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1160px,
+);
+
+$spacer: 1.5rem !default;
+$spacers: (
+  ) !default;
+$spacers: map-merge((0: 0,
+      5px: 5px,
+      10px: 10px,
+      15px: 15px,
+      20px: 20px,
+      25px: 25px,
+      30px: 30px,
+      35px: 35px,
+      40px: 40px,
+      45px: 45px,
+      50px: 50px,
+      55px: 55px,
+      60px: 60px,
+      65px: 65px,
+      70px: 70px,
+      75px: 75px,
+      80px: 80px,
+      85px: 85px,
+      90px: 90px,
+      95px: 95px,
+      100px: 100px,
+      105px: 105px,
+      110px: 110px,
+      115px: 115px,
+      120px: 120px,
+      125px: 125px,
+      130px: 130px,
+      135px: 135px,
+      140px: 140px,
+      145px: 145px,
+      150px: 150px,
+      155px: 155px,
+      160px: 160px,
+      165px: 165px,
+      170px: 170px,
+      175px: 175px,
+      180px: 180px,
+      185px: 185px,
+      190px: 190px,
+      195px: 195px,
+      200px: 200px,
+      205px: 205px,
+      210px: 210px,
+      215px: 215px,
+      220px: 220px,
+      225px: 225px,
+      230px: 230px,
+      235px: 235px,
+      240px: 240px,
+      245px: 245px,
+      250px: 250px),
+    $spacers
+);
+
+// $accordion-border-color: #666666;
+// // $accordion-border-radius: 10px;
+// $accordion-padding-x: 20px;
+// $accordion-padding-y: 20px;
+// $accordion-active-bg: #ffffff;
+// $accordion-active-color: inherit;
+// $accordion-btn-focus-border-color: inherit;
+// $accordion-button-active-bg: inherit;
+// $accordion-button-active-color: inherit;
+// $accordion-button-focus-border-color: #ffffff;
+// $accordion-button-focus-box-shadow: none;
+// $accordion-icon-width: 30px;
+// $accordion-button-icon: url('data:image/svg+xml,<svg width="40" height="40" viewBox=" 0 0 40 40" fill=" none" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" rx="20" fill="#D1E4FF" /> <rect x="18" y="10" width="3.33333" height="20" fill="#717171" /> <rect x="10" y="21" width="3.33333" height="20" transform="rotate(-90 10 21)" fill="#717171" /></svg>');
+// $accordion-button-active-icon: url('data:image/svg+xml,<svg width="40" height="40" viewBox=" 0 0 40 40" fill=" none" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" rx="20" fill="#D1E4FF" /> <rect x="10" y="21" width="3.33333" height="20" transform="rotate(-90 10 21)" fill="#717171" /> </svg>');
+
+
+// .accordion-button:not(.collapsed) {
+//   box-shadow: none !important;
+// }
+
+// @media screen and (min-width: 768px) {
+//   $accordion-padding-x: 30px;
+//   $accordion-padding-y: 35px;
+// }

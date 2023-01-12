@@ -1,0 +1,1082 @@
+// inter
+@font-face {
+    font-family: "InterBlack";
+    src: url("../fonts/inter/Inter-UI-Black.woff2") format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "InterBlackItalic";
+    src: url("../fonts/inter/Inter-UI-BlackItalic.woff2") format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "InterBold";
+    src: url("../fonts/inter/Inter-UI-Bold.woff2") format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "InterBoldItalic";
+    src: url("../fonts/inter/Inter-UI-BoldItalic.woff2") format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "InterItalic";
+    src: url("../fonts/inter/Inter-UI-Italic.woff2") format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "InterMedium";
+    src: url("../fonts/inter/Inter-UI-Medium.woff2") format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "InterMediumItalic";
+    src: url("../fonts/inter/Inter-UI-MediumItalic.woff2") format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "InterRegular";
+    src: url("../fonts/inter/Inter-UI-Regular.woff2") format('woff2');
+    font-display: swap;
+}
+
+// stratos lc 
+
+@font-face {
+    font-family: 'StratosLCMedium';
+    src: url('../fonts/StratosLC/StratosLCWeb-Medium.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "StratosLCRegular";
+    src: url("../fonts/StratosLC/StratosLCWeb-Regular.woff2") format('woff2');
+    font-display: swap;
+}
+
+// manrope
+
+@font-face {
+    font-family: "ManropeRegular";
+    src: url("../fonts/manrope/Manrope-Regular.woff2") format('woff2');
+    font-display: swap;
+}
+
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$primary-blue: #016AFF;
+$bg-primary: #fff;
+$bg-green: #13334b;
+$bg-light-green: #74A57F;
+$bg-greenish-blue: #07BEB8;
+$text-darkish: #404040;
+$text-grey: #26262699;
+$text-red: #ff3d00;
+
+$text-dark: #111111;
+$text-gold: #FFE247;
+
+body {
+    background: $bg-primary;
+    font-family: "InterRegular";
+}
+
+img {
+    vertical-align: middle;;
+}
+img.img-fluid{
+    //BS compouned class
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: 43px;
+    font-family: "StratosLCMedium";
+    color: $text-darkish;
+    line-height: 47px;
+}
+
+h2 {
+    font-family: "StratosLCMedium";
+    font-size: 35px;
+    line-height: 42px;
+}
+
+h3 {
+    font-family: "StratosLCRegular";
+    font-size: 24px;
+    line-height: 32px;
+
+    &.golden {
+        color: $text-gold;
+    }
+}
+
+h4 {
+    font-family: "StratosLCRegular";
+    font-size: 20px;
+    line-height: 30px;
+
+    &.golden {
+        color: $text-gold;
+    }
+}
+
+
+p {
+    font-size: 16px;
+    color: $text-dark;
+    line-height: 23px;
+}
+
+button {
+    font-family: "InterMedium", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    &.primary {
+        background-color: $primary-blue;
+        color: #fff;
+
+        &.outlined {
+            background: transparent;
+            border: 3px solid #016AFF;
+            color: #000;
+        }
+
+        border-radius: 60px;
+    }
+
+    &.shadow {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+}
+
+.header {
+    background-color: $bg-primary;
+
+    .logo {
+        img {
+            width: 140px;
+        }
+    }
+}
+
+.hero {
+    // background: url("./assets/care/care-hero.png");
+    position: relative;
+    .hero-image {
+        img {
+            // width: 285px;
+            width: 100vw;
+            filter: brightness(0.5);
+            min-height: 800px;
+            object-fit: cover;
+        }
+        position: absolute;
+        top: 0%;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+    }
+
+
+    .points {
+        display: none;
+    }
+
+    position: relative;
+    overflow: hidden;
+}
+
+.common-features {
+    &.features {
+        background: $bg-green;
+        position: relative;
+
+       
+
+        // &::before {
+        //     background: url("../images/curves/mobile/first_wave_m_top.webp");
+        //     background-size: cover;
+        //     background-position: bottom;
+        //     background-repeat: no-repeat;
+        //     top: -4%;
+        //     content: '';
+        //     height: 327px;
+        //     position: absolute;
+        //     left: 0;
+        //     right: 0;
+        // }
+
+        // &::after {
+        //     background: url("../images/curves/mobile/first_wave_m_bottom.webp");
+        //     background-size: cover;
+        //     background-position: bottom;
+        //     background-repeat: no-repeat;
+        //     bottom: -6%;
+        //     content: '';
+        //     height: 271px;
+        //     position: absolute;
+        //     left: 0;
+        //     right: 0;
+        //     z-index: 1;
+        // }
+
+        .content {
+            position: relative;
+            z-index: 2;
+            .points{
+                img{
+                    width: 40px;
+                }
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 25px;
+                color: white;
+            }
+            
+            img{
+                &.nurse{
+                width: 220px !important;
+            }
+                width: 400px;
+                max-width: 100%;
+            }
+
+        }
+    }
+
+    .caption {
+        h2 {
+            color: #ffffff;
+        }
+    }
+
+    &.many-more {
+        position: relative;
+        z-index: 0;
+
+        // &::after {
+        //     background: url("../images/curves/mobile/plans_m_wave.webp") center bottom no-repeat;
+        //     bottom: -2%;
+        //     content: '';
+        //     height: 179px;
+        //     position: absolute;
+        //     width: 100%;
+        //     -webkit-transform: scaleY(-1);
+        //     transform: scaleY(-1);
+        //     z-index: 1;
+        // }
+
+        background: $bg-light-green;
+
+        .content {
+
+            h3 {
+                color: #ffffff;
+            }
+
+            img {
+                height: 45px;
+            }
+
+            p {
+                margin: auto;
+                max-width: 282px;
+                color: #ffffff;
+                line-height: 21px;
+            }
+        }
+    }
+
+    &.plans {
+        background: $bg-greenish-blue;
+        position: relative;
+
+        &::after {
+            background: url("../images/curves/mobile/plans_m_wave.webp");
+            background-size: cover;
+            background-position: bottom;
+            background-repeat: no-repeat;
+            bottom: -10%;
+            content: '';
+            height: 179px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            z-index: -1;
+        }
+
+        .content {
+            color: $text-darkish;
+
+            h2 {
+                color: $text-darkish;
+                font-size: 40px;
+                line-height: 48px;
+            }
+
+            h3 {
+                color: $text-darkish;
+            }
+
+            .icon {
+
+                img {
+                    height: 45px;
+                }
+            }
+
+            .image-desktop {
+                display: none;
+
+            }
+
+            .image-mobile {
+                display: block;
+
+                img {
+                    width: 100%;
+                }
+
+            }
+
+            p {
+                margin: auto;
+                max-width: 330px;
+                color: $text-darkish;
+            }
+        }
+    }
+
+
+    &.faqs {
+        background: transparent;
+        position: relative;
+
+        h2 {
+            color: $text-darkish;
+            max-width: 415px;
+            font-size: 44px;
+            line-height: 53px;
+        }
+
+        h3 {
+            button {
+                text-transform: none;
+                font-size: 20px;
+                line-height: 29px;
+            }
+        }
+
+        p {
+            color: $text-dark;
+        }
+    }
+
+    &.mission {
+        background: transparent;
+        .mohini{
+            border-radius: 50%;
+        }
+        .caption {
+            h2 {
+                color: $text-darkish;
+                font-size: 44px;
+                line-height: 53px;
+            }
+
+            p {
+                font-size: 19px;
+            }
+        }
+        .content{
+            img{
+                max-width: 250px;
+            }
+        }
+
+        h4 {
+            color: $text-grey;
+        }
+
+        p {
+            color: $text-dark;
+            line-height: 27px;
+            font-size: 18px;
+        }
+
+    }
+
+    &.contact-us {
+        background: transparent;
+        position: relative;
+
+        .caption {
+            h2 {
+                color: $text-darkish;
+                font-size: 44px;
+                line-height: 53px;
+                max-width: unset;
+            }
+
+        }
+
+        .content {
+            .info-text {
+                font-family: "ManropeRegular", sans-serif;
+                font-size: 20px;
+            }
+
+            .red {
+                color: $text-red;
+            }
+
+            .contact-form {
+
+
+                label {
+                    font-family: "ManropeRegular", sans-serif;
+                    font-size: 20px;
+                    line-height: 29px;
+                    display: block;
+                }
+
+                input,
+                textarea,
+                select {
+                    font-family: "ManropeRegular", sans-serif;
+                    width: 100%;
+                    height: 70px;
+                    border: 1px solid #666666;
+                    border-radius: 10px;
+                    padding: 20px 30px;
+                    font-size: 20px;
+
+                    &:focus {
+                        outline: none;
+                        border-color: #000;
+                    }
+
+                    &.error {
+                        border-color: #ff3d00;
+                    }
+
+                    &::placeholder {
+                        font-family: "ManropeRegular", sans-serif;
+                    }
+
+                    &.textarea {
+                        height: auto;
+                    }
+                }
+
+                textarea {
+                    resize: vertical;
+                }
+
+                select {
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                    position: relative;
+                    background-color: #fff;
+
+                    &::before {
+                        content: "v";
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        height: 17px;
+                        width: 26px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background: $text-dark;
+    position: relative;
+
+    &::before {
+        background: url("../images/curves/mobile/footer_m_wave.webp") center bottom no-repeat;
+        left: 0px;
+        bottom: 99%;
+        content: '';
+        height: 149px;
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .logo {
+        border-bottom: 1px solid #ffffff;
+        img{
+            width: 200px;
+        }
+    }
+
+    .sub-text {
+        max-width: 700px;
+
+        p {
+            color: #ffffff;
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+
+    ul{
+        li{
+            display: block !important;
+        }
+    }
+
+    .copy-right {
+        ul{
+            li{
+                display: block;
+                color: #ffffff;
+                a{
+                    color: inherit;
+                    font-size: 12px;
+                    text-decoration: none;
+                }
+            }
+        }
+        p {
+            font-size: 12px;
+            color: #ffffff;
+        }
+    }
+}
+
+.accordion {
+    background-color: #fff;
+    border: 1px solid $text-dark;
+    border-radius: 6px;
+
+    .accordion-item {
+        border-bottom: 1px solid $text-dark;
+        
+        &:last-child {
+            border-bottom: none;
+        }
+        
+        .accordion-header {
+            position: relative;
+            .plus,
+            .minus{
+                width: 30px;
+                height: 30px;
+            }
+            .plus {
+                position: absolute;
+                top: 30%;
+                right: 30px;
+                visibility: visible;
+                transition:all 0.4s ease;
+                opacity: 1;
+            }
+
+            .minus {
+                position: absolute;
+                top: 30%;
+                right: 30px;
+                visibility: hidden;
+                transition:all 0.4s ease;
+                opacity: 0;
+            }
+
+            display: block;
+            background: transparent;
+            width: 100%;
+            text-transform: unset;
+            outline: none;
+            border: none;
+            h3{
+                font-size: 20px;
+                font-family: "InterRegular",sans-serif;
+                font-weight: 400;
+                list-style: 29px;
+            }
+            &:after{
+                position: absolute;
+                z-index: 1;
+                top:0;
+                right:0;
+                left:0;
+                bottom: 0;
+                content: "";
+                cursor: pointer;
+            }
+        }
+
+        .accordion-body {
+            max-height: 500px;
+            height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition: all 0.25s ease-in-out;
+        }
+
+        &.active {
+            .accordion-header {
+
+                .plus {
+                    visibility: hidden;
+                    transform: rotate(180deg);
+                    opacity: 0;
+                }
+                
+                .minus {
+                    transform: rotate(180deg);
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+
+            .accordion-body {
+                opacity: 1;
+                height: auto;
+                padding-bottom: 20px;
+            }
+        }
+    }
+}
+
+.accordion-wrapper{
+    z-index: 1;
+    position: relative;
+}
+
+.grecaptcha-badge{
+    visibility: hidden !important;
+}
+
+.section-header {
+    p {
+        font-size: 19px!important;
+        line-height: 27px !important;
+        max-width: 100%!important;
+    }
+}
+
+// unusual breakpoints
+@media (max-width: 575px) {
+    .common-features.many-more .content img.scaleIconInMobile{
+        height: 54px;
+    }
+}
+@media screen and (min-width: 680px) {
+    main {
+        .common-features {
+            &.plans {
+                .pull-up {
+                    &.desktop {
+                        margin-top: -60px;
+                    }
+                }
+
+
+            }
+        }
+    }
+}
+
+// standard breakpoints
+@media screen and (min-width: 768px) {
+    .header {
+        .logo {
+            img {
+                width: 165px;
+            }
+        }
+
+        nav {
+            .contact-us {
+                display: inline;
+            }
+
+            .ham-icon {
+                display: none;
+            }
+        }
+    }
+
+
+
+    .hero {
+        .points {
+            display: block;
+
+            img {
+                width: 40px;
+            }
+
+            span {
+                color: #353535;
+                font-family: "StratosLCMedium";
+                font-size: 18px;
+            }
+        }
+
+        position: relative;
+        overflow: hidden;
+    }
+
+    .common-features {
+
+
+        &.features {
+
+            // &::before {
+            //     background: url("../images/curves/web/first_wave_top.webp");
+            //     background-size: cover;
+            //     background-position: bottom;
+            //     background-repeat: no-repeat;
+            //     top: -10%;
+            //     height: 244px;
+            //     left: 0;
+            //     right: 0;
+            // }
+
+            // &::after {
+            //     background: url("../images/curves/web/first_wave_bottom.webp");
+            //     background-size: cover;
+            //     background-position: bottom;
+            //     background-repeat: no-repeat;
+            //     bottom: -20%;
+            //     height: 406px;
+            //     width: 100%;
+            //     left: 0;
+            // }
+
+           
+        }
+
+
+        &.many-more {
+            // &::after {
+            //     background: url("../images/curves/web/plans_wave.webp") center bottom no-repeat;
+            //     bottom: -5%;
+            //     height: 232px;
+            // }
+
+            .caption {
+                h2 {
+                    font-size: 44px;
+                    line-height: 52px;
+                }
+            }
+
+        }
+
+        &.plans {
+            // &::after {
+            //     background: url("../images/curves/web/plans_wave.webp");
+
+            //     bottom: -20%;
+            //     height: 232px;
+            //     left: 0;
+            //     right: 0;
+            // }
+            .content {
+                .pull-left {
+                    &.desktop {
+                        margin-left: -30px;
+                    }
+                }
+    
+                h2 {
+                    font-size: 40px;
+                    line-height: 48px;
+                }
+    
+                h3 {
+                    color: $text-darkish;
+                }
+    
+                .icon {
+    
+                    img {
+                        height: 45px;
+                    }
+                }
+    
+                .image-desktop {
+                    img {
+                        width: 100%;
+                    }
+    
+                    display: block;
+    
+                }
+    
+                .image-mobile {
+                    display: none;
+    
+                    img {
+                        width: 100%;
+                    }
+    
+                }
+    
+                p {
+                    margin: auto;
+                    max-width: 330px;
+                    color: $text-darkish;
+                }
+            }
+        }
+
+
+
+        &.faqs {
+
+            .container {
+                position: relative;
+                // &::after {
+                //     content: '';
+                //     background: url("../images/curves/ellipse.webp") center bottom no-repeat;
+                //     right: 0px;
+                //     top: -65px;
+                //     height: 694px;
+                //     width: 694px;
+                //     position:absolute;
+                //     z-index: -1;
+                // }
+            }
+            
+            h2 {
+                max-width: unset;
+            }
+
+            h3 {
+                button {
+                    text-transform: none;
+                    font-size: 20px;
+                    line-height: 29px;
+                }
+            }
+
+            p {
+                color: $text-dark;
+            }
+        }
+
+        &.mission {
+            .caption {
+                h2 {
+                    font-size: 44px;
+                    line-height: 53px;
+                    max-width: unset;
+                }
+            }
+
+
+            p {
+                line-height: 27px;
+                font-size: 18px;
+            }
+
+        }
+
+        &.contact-us {
+
+            // &::before {
+            //     background: url("../images/curves/lets-talk-top.webp") center left no-repeat;
+            //     left: 0px;
+            //     top: 60px;
+            //     content: '';
+            //     height: 426px;
+            //     width: 300px;
+            //     z-index: -1;
+            // }
+
+            // &::after {
+            //     content: "";
+            //     position: absolute;
+            //     background: url("../images/curves/lets-talk-bottom.webp") bottom right no-repeat;
+            //     width: 100%;
+            //     height: 232px;
+            //     bottom: 10%;
+            //     z-index: -1;
+            // }
+
+            .caption {
+                h2 {
+                    max-width: 744px;
+                }
+
+                max-width: unset;
+            }
+
+            .content {
+                .info-text {
+                    font-family: "ManropeRegular", sans-serif;
+                    font-size: 20px;
+                }
+
+                .red {
+                    color: $text-red;
+                }
+
+
+            }
+        }
+
+        .accordion{
+            .accordion-item{
+                .acoordion-header{
+                    .plus,.minus{
+                        width: 40px;
+                    }
+                }
+            }
+        }
+        
+    }
+
+    .accordion {
+        .accordion-item {
+            .accordion-header {
+                .plus,
+                .minus{
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+
+
+
+
+    footer {
+        background: $text-dark;
+        position: relative;
+
+        &::before {
+            background: url("../images/curves/web/footer_wave.webp") center bottom no-repeat;
+            left: 0px;
+            bottom: 100%;
+            right: 0px;
+            height: 265px;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .header nav .contact-us {
+        min-width: 170px;
+    }
+    main {
+        .hero {
+ 
+            .hero-image.text-md-end{
+                text-align: right !important;
+            }
+            .hero-text {
+                h1 {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 50px;
+                    line-height: 50px;
+                    margin-bottom: 28px!important;
+                }
+                p {
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 29px;
+                    // max-width: 460px;
+                    margin-bottom: 33px!important;
+                }
+                
+            }
+        }
+        button.primary {
+            min-width: 170px;
+        }
+
+        .common-features {
+            .curve {
+                top: -1.5vw;
+            }
+        }
+        .common-features.mission .caption h2 {
+            max-width: 450px;
+        }
+        .common-features.plans .content h2,
+        .common-features  .caption h2 {
+            font-weight: 500;
+            font-size: 44px;
+            line-height: 53px;
+            text-align: center;
+        }
+        .common-features.contact-us .caption h2{
+            max-width: 640px;
+        }
+        .common-features.features .content p {
+            line-height: 27px;
+        }
+
+        .common-features.plans {
+            .content p{
+                font-size: 18px;
+                line-height: 23px;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+    .common-features.plans .content .image-desktop img {
+        width: 480px;
+        margin-top: -65px;
+        margin-left: -35px;
+    }
+}
+@media screen and (min-width: 2000px) {
+    .common-features.features::before,
+    .common-features.features::after,
+    .common-features.many-more::after,
+    footer::before {
+        background-size: 100% auto;
+    }
+    footer::before,
+    .common-features.features::before {
+        background-position: center top;
+    }
+    .common-features.plans::after {
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+}
