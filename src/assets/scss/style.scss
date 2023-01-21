@@ -146,13 +146,13 @@ p {
     line-height: 23px;
 }
 
-button {
+button, a.btn {
     font-family: "InterMedium", sans-serif;
     font-size: 14px;
     text-transform: uppercase;
     cursor: pointer;
     transition: opacity 0.3s ease;
-
+    text-decoration: none;
     &:hover {
         opacity: 0.7;
     }
