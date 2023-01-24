@@ -528,6 +528,12 @@ button, a.btn {
 footer {
     background: $text-dark;
     position: relative;
+    font-family: "StratosLCRegular";
+    .ndis{
+        img{
+            width: 100%;
+        }
+    }
 
     &::before {
         background: url("../images/curves/mobile/footer_m_wave.webp") center bottom no-repeat;
